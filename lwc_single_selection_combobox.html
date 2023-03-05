@@ -1,7 +1,8 @@
 <template>
-    <p>{label}</p>
-    <br/>
-    <template for:each={options} for:item="option">
-        <lightning-input key={option.value} onchange={handleSelection} type="checkbox" label={option.label} value={option.value}></lightning-input>
-    </template>
+    <div class="slds-box" style="width: fit-content; background: white;">
+        <p style="margin-bottom: 10px; font-weight: bold;">{label}</p>
+        <template for:each={options} for:item="option">
+            <lightning-input key={option.value} onchange={handleSelection} type="checkbox" label={option.label} value={option.value}></lightning-input>
+        </template>
+    </div>
 </template>
