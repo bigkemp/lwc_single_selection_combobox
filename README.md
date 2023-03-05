@@ -1,6 +1,8 @@
 # LWC Single Selection Checkbox Group Component
 
 This LWC Checkbox Group component allows single selection of a checkbox, instead of the multiple selection Salesforce offers. It is designed to be used in Lightning Web Components in Salesforce.
+![Image Description](https://github.com/bigkemp/lwc_single_selection_combobox/blob/main/example.png)
+
 
 ## Usage
 
