@@ -15,6 +15,7 @@ Additionally, there is a custom event called `selected` that the parent componen
 
 Example usage:
 
+HTML:
 ```html
 <c-lwc_single_selection_combobox 
     name={planSelectionAttName}
@@ -22,6 +23,15 @@ Example usage:
     options={plans}
     onselected={chosePlan}>
 </c-lwc_single_selection_combobox>
+```
+Javascript:
+```javascript
+    plans = [{label:"Great Plan", value:"great"},{label:"Good Plan", value:"good"},{label:"Horrible Plan", value:"horrible"}]
+    planSelectionAttName = "myplans"
+    planSelectionTitle = "Select a Plan!"
+    chosePlan(e){
+        console.log('e.detail.value',e.detail.value);
+    }
 ```
 
 ## Contributing
