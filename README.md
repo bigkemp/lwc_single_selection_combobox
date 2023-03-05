@@ -11,7 +11,7 @@ To use this component, add it to your Lightning Web Component by importing it an
 - **name**: The name attribute's value on the child lightning-input component.
 - **value**: The default value defined by the parent and managed by the child.
 
-Additionally, there is a custom event called `selected` that the parent component can listen for by using the `onselected` attribute. The value of the selected option will be available in the `event.target.detail.value` property.
+Additionally, there is a custom event called `selected` that the parent component can listen for by using the `onselected` attribute. The value of the selected option will be available in the `event.detail.value` property.
 
 Example usage:
 
