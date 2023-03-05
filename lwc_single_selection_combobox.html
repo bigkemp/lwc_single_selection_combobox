@@ -1,0 +1,7 @@
+<template>
+    <p>{label}</p>
+    <br/>
+    <template for:each={options} for:item="option">
+        <lightning-input key={option.value} onchange={handleSelection} type="checkbox" label={option.label} value={option.value}></lightning-input>
+    </template>
+</template>
